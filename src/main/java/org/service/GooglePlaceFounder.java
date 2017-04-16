@@ -40,7 +40,6 @@ public class GooglePlaceFounder implements PlaceFounder {
 	@Override
 	public List<SimplePlace> getNearestPlaces(TargetLocation targetLocation) {
 		if (targetLocation == null) {
-			System.out.println("GooglePlaceFounder.getNearestPlaces: targetLocation is null");
 			return new ArrayList<SimplePlace>();
 		}
 

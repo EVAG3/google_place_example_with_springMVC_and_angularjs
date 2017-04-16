@@ -1,10 +1,30 @@
 # Google Place example with 
-## 1 Runtime environment
+## 1 General introduction
+This application demonstrate how to use Google Place with Spring MVC and AngularJS. The Spring MVC part is generally referenced from:
+http://www.java2blog.com/2016/03/angularjs-restful-web-service-example.html
+This application modify the example and add the Google Place functions. 
+
+## 2 Runtime environment
 1) With Eclipse
-use "import"
+You should use "import ..." and "import existing Maven projects".
+Then you should right click on the project and select "Properties".
+Then click on the "Project Facets". Apply facets form and click on the "Dynamic Web Module".
+Then in "Deployment Assembly" under "Resource", click "add ...". Then add "Java Build Path Entry...". Then choose the "Maven dependency".
+Still in "Resource", click "add..." and then "Folder". Add "src/main/webapp"
+Then "run as ..." and "Maven build", type "clean install".
+Finally "run as..." and "run on server" with tomcat8.
 
-2) How to use the framework
-This framework has a solid GUI interface. The user could use the GUI entry to choose which feature he would like to use. The user must click on the "Click to apply this feature!" button to apply the feature. The user then click on the "Click to draw the final QRCode!" button to get the final QRCode.
+2) With Maven
+You could run this web application with maven.
+type the following command.
+mvn compile
+mvn org.apache.tomcat.maven:tomcat7-maven-plugin:2.2:run
+* currently this setting and maven plugin works for me. Change to other tomcat plugin if it doesn't work.
 
-3) How to add more jar
-We have provide the default jar for data plugin and display plugins. The user could add customized jar for data/display plugins. A user should implement the related plugin interface and the META-INF file. Then compile into a jar. And finally place the jar in the correct folder. 
+## 3 How to use the web application
+First properly deploy this web application
+Then open the internet browser like Google Chrome/Firefox, and go to the address:
+http://localhost:8080/google_place_example_with_springMVC_and_angularjs/
+type the target locations and the type of the nearest location you want. Make sure the type is supported by the Google Place API, like hospital, real_estate_agency, etc. You could search the supported type here:
+https://developers.google.com/places/supported_types
+Then click confirm. Because we will provide the URL link to the place. So it may takes up to 10 seconds (other than 3 seconds for normal Google Place API call). 
