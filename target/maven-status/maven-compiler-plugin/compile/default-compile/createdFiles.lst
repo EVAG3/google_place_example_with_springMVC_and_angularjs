@@ -1,0 +1,7 @@
+org/service/GooglePlaceFounder.class
+org/bean/SimplePlace.class
+org/service/GooglePlaceFounder$1.class
+org/bean/TargetLocation.class
+org/controller/PlaceController.class
+org/service/PlaceService.class
+org/service/PlaceFounder.class

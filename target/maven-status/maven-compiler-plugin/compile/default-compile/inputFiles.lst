@@ -1,0 +1,6 @@
+/home/yu/workspace/google_place_example_with_springMVC_and_angularjs/src/main/java/org/bean/SimplePlace.java
+/home/yu/workspace/google_place_example_with_springMVC_and_angularjs/src/main/java/org/bean/TargetLocation.java
+/home/yu/workspace/google_place_example_with_springMVC_and_angularjs/src/main/java/org/controller/PlaceController.java
+/home/yu/workspace/google_place_example_with_springMVC_and_angularjs/src/main/java/org/service/PlaceFounder.java
+/home/yu/workspace/google_place_example_with_springMVC_and_angularjs/src/main/java/org/service/PlaceService.java
+/home/yu/workspace/google_place_example_with_springMVC_and_angularjs/src/main/java/org/service/GooglePlaceFounder.java
