@@ -1,4 +1,7 @@
 # Google Place example with 
+
+## [Important] Give an valid Google Place API Key before you run the application
+
 ## 1 General introduction
 This application demonstrate how to use Google Place with Spring MVC and AngularJS. The Spring MVC part is generally referenced from:
 http://www.java2blog.com/2016/03/angularjs-restful-web-service-example.html
