@@ -25,7 +25,7 @@ public class GooglePlaceFounder implements PlaceFounder {
 	 * address to get a key with a google account.
 	 * https://developers.google.com/places/web-service/get-api-key
 	 */
-	private static final String GOOGLE_PLACE_API_KEY = "AIzaSyDZfjBHe1PedJB1jVU57hWhs6E7GIgvum0";
+	private static final String GOOGLE_PLACE_API_KEY = "Your API Key";
 
 	/** the client */
 	private static GooglePlaces client;

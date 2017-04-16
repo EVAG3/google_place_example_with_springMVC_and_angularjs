@@ -7,10 +7,17 @@ This application modify the example and add the Google Place functions.
 ## 2 Runtime environment
 1) With Eclipse
 You should use "import ..." and "import existing Maven projects".
-Then you should right click on the project and select "Properties".
-Then click on the "Project Facets". Apply facets form and click on the "Dynamic Web Module".
+
+Usually you should only need to include the Maven dependency:
+Right click on the project and select "Properties".
 Then in "Deployment Assembly" under "Resource", click "add ...". Then add "Java Build Path Entry...". Then choose the "Maven dependency".
-Still in "Resource", click "add..." and then "Folder". Add "src/main/webapp"
+
+If it doesn't work, you need to check all the steps:
+Right click on the project and select "Properties".
+Then click on the "Project Facets". Apply facets form and click on the "Dynamic Web Module".
+Then for runtime environment, click on your tomcat server. 
+Then in "Deployment Assembly" under "Resource", click "add ...". Then add "Java Build Path Entry...". Then choose the "Maven dependency".
+Still in "Resource" under "Deployment Assembly", click "add..." and then "Folder". Add "src/main/webapp"
 Then "run as ..." and "Maven build", type "clean install".
 Finally "run as..." and "run on server" with tomcat8.
 
